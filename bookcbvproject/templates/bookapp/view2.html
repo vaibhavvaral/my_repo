@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Books Information</h1>
+    {% if book_list %}
+        {% for book in book_list %}
+            <ul>
+                <li><a href="/{{book.id}}">Book Tital:{{book.tital}}</a></li>
+            </ul>
+        {% endfor %}
+
+    {% endif %}
+    
+</body>
+</html>

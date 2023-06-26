@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Books Information</h1>
+    {% if book %}
+       
+            <ul>
+                <li>Book Tital:{{book.tital}}</li>
+                <li>Book Author:{{book.auther}}</li>
+                <li>Book pages:{{book.pages}}</li>
+                <li>Book price:{{book.price}}</li>
+            </ul>
+        <a href="/update/{{book.id}}">Update Book inforamation</a>
+        <a href="/delete/{{book.id}}">Delete Book</a>
+
+    {% endif %}
+    </body>
+</html>
